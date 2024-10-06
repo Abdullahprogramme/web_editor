@@ -9,9 +9,9 @@ function Preview({ htmlCode, cssCode }) {
   `;
 
   return (
-    <div className="w-full h-full border border-gray-300 pt-1 bg-white">
+    <div className="w-full h-full border pt-1 border-gray-300">
       <iframe
-        className="w-full h-full border-none rounded-lg"
+        className="w-full h-full border-none"
         srcDoc={srcDoc}
         title="Preview"
         sandbox="allow-scripts"
