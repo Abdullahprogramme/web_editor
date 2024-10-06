@@ -6,7 +6,7 @@ function HtmlEditor({ htmlCode, setHtmlCode }) {
   };
 
   return (
-    <div className="w-1/2 p-4 flex flex-col">
+    <div className="w-1/2 p-1 flex flex-col">
         <h1 className="text-2xl font-bold text-gray-600">.html</h1>
         <div className="relative flex-1">
             <textarea
