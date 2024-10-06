@@ -9,16 +9,18 @@ function App() {
   const [cssCode, setCssCode] = useState('');
 
   return (
-    <div className="h-screen flex flex-col">
-      <header className="flex items-center justify-between p-1 bg-gray-800 text-white">
-        <h1 className="text-xl font-bold">Web Editor</h1>
-        <div className="flex space-x-4">
-          <a href="https://github.com/Abdullahprogramme" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-2xl" />
-          </a>
-          <a href="https://www.linkedin.com/in/abdullahtariq78/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-2xl" />
-          </a>
+    <div className="h-screen flex flex-col bg-gray-100 text-gray-900">
+      <header className="bg-white shadow">
+        <div className="max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+          <h1 className="text-2xl font-bold text-gray-900">Web Editor</h1>
+          <div className="flex space-x-4">
+            <a href="https://github.com/Abdullahprogramme" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+              <FaGithub className="text-2xl" />
+            </a>
+            <a href="https://www.linkedin.com/in/abdullahtariq78/" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+              <FaLinkedin className="text-2xl" />
+            </a>
+          </div>
         </div>
       </header>
       <div className="flex flex-1 overflow-hidden">
