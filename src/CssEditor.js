@@ -54,14 +54,14 @@ function CssEditor({ cssCode, setCssCode }) {
           <h1 className="text-2xl font-bold text-gray-600">.css</h1>
           <div className='flex flex-row items-center space-x-2 ml-auto'>
               <button 
-                className='pt-1 rounded-full hover:bg-gray-200' 
+                className='p-2 rounded-full hover:bg-gray-200' 
                 onClick={() => navigator.clipboard.writeText(cssCode)}
                 title='Copy to clipboard'
               >
                 <HiOutlineClipboardCopy className='text-xl text-gray-600' />
               </button>
               <button 
-                className='pt-1 rounded-full hover:bg-gray-200' 
+                className='p-2 rounded-full hover:bg-gray-200' 
                 onClick={() => setCssCode('')}
                 title='Clear CSS code'
               >
