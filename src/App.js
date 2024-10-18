@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="h-screen flex flex-col bg-gradient-to-r from-blue-100 to-indigo-200 text-gray-900">
       <header className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white shadow-lg">
-        <div className="max-w-7xl mx-auto py-4 px-6 sm:px-8 lg:px-10 flex justify-between items-center">
+        <div className="max-w-9xl mx-auto py-4 px-6 sm:px-8 lg:px-10 flex justify-between items-center">
           <span className="flex items-center">
               <FaHtml5 className="text-3xl mr-2 text-red-400" />
               <FaCss3Alt className="text-3xl mr-2 text-red-400" />
@@ -69,14 +69,14 @@ function App() {
       </div>
 
       <div className="flex flex-1 overflow-hidden flex-col md:flex-row">
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 md:flex-[60%] overflow-hidden">
           {activeTab === 'html' ? (
             <HtmlEditor htmlCode={htmlCode} setHtmlCode={setHtmlCode} />
           ) : (
             <CssEditor cssCode={cssCode} setCssCode={setCssCode} />
           )}
         </div>
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 md:flex-[40%] overflow-hidden">
           <Preview htmlCode={htmlCode} cssCode={cssCode} />
         </div>
       </div>
